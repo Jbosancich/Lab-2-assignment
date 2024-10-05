@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Hill Rock Mountain Terrain/Scenes/TerrainScene_02.unity
+    guid: 3eafe3c4a1b44f34fb793d9320f4bc82
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0e43e67abc5ca49f485622e71bb33360, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: e4edb7815bded4111a0d5af012747aeb, type: 2}
