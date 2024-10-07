@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class Teleport : MonoBehaviour
 {
-    public Transform player, destination;
+    public Transform player;          // Reference to XR Origin Rig's Transform
+    public Transform destination;     // Reference to Receiver Portal's Transform
 
-    public GameObject playerg;
-    // Start is called before the first frame update
+    // Trigger detection when the player enters the Portal Red
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            playerg.SetActive(false);
+            // Teleport the player (XR Origin Rig) to the destination (Receiver Portal)
             player.position = destination.position;
-            playerg.SetActive(true);
         }
-        
     }
 }
+
