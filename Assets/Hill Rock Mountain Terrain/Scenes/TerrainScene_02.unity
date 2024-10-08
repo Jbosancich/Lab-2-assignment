@@ -3307,12 +3307,16 @@ PrefabInstance:
       value: spear
       objectReference: {fileID: 0}
     - target: {fileID: 491694, guid: 0146db84378023d43b191a0f89508214, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2153
+      objectReference: {fileID: 0}
+    - target: {fileID: 491694, guid: 0146db84378023d43b191a0f89508214, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.22
       objectReference: {fileID: 0}
     - target: {fileID: 491694, guid: 0146db84378023d43b191a0f89508214, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.7996297
+      value: -4.744
       objectReference: {fileID: 0}
     - target: {fileID: 491694, guid: 0146db84378023d43b191a0f89508214, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3350,6 +3354,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6484270, guid: 0146db84378023d43b191a0f89508214, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3360,6 +3368,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 115382, guid: 0146db84378023d43b191a0f89508214, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1605763741}
+    - targetCorrespondingSourceObject: {fileID: 115382, guid: 0146db84378023d43b191a0f89508214, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1605763746}
   m_SourcePrefab: {fileID: 100100000, guid: 0146db84378023d43b191a0f89508214, type: 3}
 --- !u!4 &1445991363 stripped
 Transform:
@@ -3490,7 +3501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 777073968}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -3657,6 +3668,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1605763746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605763737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b66b322fb61384fc78bd8159f3dea427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bearAnimator: {fileID: 1880510712}
 --- !u!1 &1606020997
 GameObject:
   m_ObjectHideFlags: 0
@@ -4313,6 +4337,11 @@ PrefabInstance:
 --- !u!4 &1880510711 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7292658344771522932, guid: f5b41ba4c79702547a89de7544b80656, type: 3}
+  m_PrefabInstance: {fileID: 1318643958}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1880510712 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3734775969355451150, guid: f5b41ba4c79702547a89de7544b80656, type: 3}
   m_PrefabInstance: {fileID: 1318643958}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1962532519
